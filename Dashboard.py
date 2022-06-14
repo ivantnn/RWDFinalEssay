@@ -75,25 +75,25 @@ st.write('Source: IAEA Nuclear Data Decay Service (NuDat 3) -> [Link](https://ww
 
 st.header('Decay chain')
 st.latex(r'''
-     \begin{tikzcd}
-        {{}^{245}Cm} \arrow[r, "\alpha"]
-        & {{}^{241}Pu} \arrow[r, "\beta^{{}-{}}"]
-        & {{}^{241}Am} \arrow[r, "\alpha"]
-        & {{}^{237}Np} \arrow[r, "\alpha"]
-        & {{}^{233}Pa} \arrow[r, "\alpha"]
-        & {{}^{233}U} \arrow[r, "\beta^{{}-{}}"]
-        & {{}^{229}Th} \arrow[r, "\alpha"]
-        & {{}^{225}Ra} \arrow[r, "\alpha"]
-        & {{}^{225}Ac} \arrow[r, "\beta^{{}-{}}"]
-        & {{}^{221}Fr} \arrow[r, "\alpha"]
-        & {{}^{217}At} \arrow[r, "\alpha"]
-        & {{}^{213}Bi} \arrow[r, "0.98 \alpha"] \arrow[rd, "0.02\beta^{{}-{}}"]
-        & {{}^{209}Tl} \arrow[r, "\beta^{{}-{}}"]
-        & {{}^{209}Pb} \arrow[r, "\beta^{{}-{}}"]
-        & {{}^{209}Bi} \arrow[r, "\alpha"]
-        & {{}^{205}Tl} \\
-        {} & {} &{}&{}&{}&{}&{}&{}&{}&{}&{}&{}& {{}^{213}Po} \arrow[ru, "\alpha"]
-\end{tikzcd}
+     \begin{CD}
+        {}^{245}Cm @>\alpha>> {}^{241}Pu
+        @>\beta^{{}-{}} >> {}^{241}Am
+        @>\alpha>> {}^{237}Np
+        @>\alpha>> {}^{233}Pa
+        @>\beta^{{}-{}} >> {}^{233}U
+        @>\alpha >> {}^{229}Th
+        @>\alpha >> {}^{225}Ra
+        @>\beta^{{}-{}} >> {}^{225}Ac
+        @>\alpha >> {}^{221}Fr
+        @>\alpha >> {}^{217}At
+        @>\alpha >> {}^{213}Bi
+        @> 0.02\beta^{{}-{}} >> {}^{213}Po
+        @>\alpha >> {}^{209}Pb
+        @>\beta^{{}-{}} >> {}^{209}Bi
+        @>\alpha >> {}^{205}Tl \\
+        @. @. @. @. @. @. @. @. @. @. @.  @V 0.98 \alpha VV @. @A \beta^{{}-{}} AA \\
+        @. @. @. @. @. @. @. @. @. @. @. {}^{209}Tl @= {}^{209}Tl @= {}^{209}Tl \\
+    \end{CD}
      ''')
 
 
