@@ -14,6 +14,13 @@ import streamlit as st
 #---------TITLE OF PAGE
 st.set_page_config(page_title = 'Radiological Waste Management', page_icon=":warning:",layout="wide")
 
+#---------ZERO-th SECTION: INTRO
+st.title(':thought_balloon:Introduction')
+st.write('Radioactive waste finds itself pretty often amidst the discussion of the viability of the Nuclear Power as a reliable and long-term energy source against climate change: Sometimes called the Achilles Heel of the energy source, sometimes argued as an advantage of nuclear in face of the fossil fuels.')
+st.write('There are several subcategories of Radioactive Waste, one of them being the High-Level Waste (HLW), which can have its origin traced back to Spent Fuel.')
+st.write('Due to its grand hazard to human health and its long-dated radiotoxicity, one possible way to keep HLW away from contaminating nature is by trapping it into Glass Matrices.')
+st.write('Since lots of countries adopted strategies to maintain radioactive residues in repositories, even with the glass matrix, it is paramount the conduction of analysis on how will these glass matrices stand the passage of the decades and isolate the radionuclides.')
+
 #---------FIRST SECTION: INPUT
 st.title(':arrow_down_small: Input Data')
 st.header('> Initial Conditions & Nuclear Data: ')
